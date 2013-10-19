@@ -24,7 +24,7 @@ while num < 1 || num > 3000
 	end		
 end
 
-puts num
+#puts num
 def old_roman_numeral numt
 	ronum = ['M' ,'D' ,'C' ,'L' ,'X' ,'V' ,'I']
 	roval = [1000 ,500 ,100 ,50 ,10 ,5 ,1]
@@ -34,7 +34,7 @@ def old_roman_numeral numt
 		muti = numt / roval[i]
 		muti.times do
 			temp.push ronum[i]
-			puts ronum[i]
+			#puts ronum[i]
 		end
 	numt = numt % roval[i]
 	i = i + 1
@@ -62,7 +62,7 @@ def roman_numeral numt
 		else
 
 			if tar == 0 
-				puts 'do nth' 
+				#puts 'do nth' 
 			elsif tar > 0 && tar <= 3
 				tar.times do
 					temp.push ronum[0+2*i]
